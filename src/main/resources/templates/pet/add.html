@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Tutorial of JPA</title>
+    <link rel="stylesheet" th:href="@{/css/pet/add.css}">
+</head>
+<body>
+    <div id="outer">
+        <header>
+            <div id="header-container">
+                <div id="head-inner">
+                    <h1>ペット情報管理システム</h1>
+                    <p class="description">ペット情報登録</p>
+                </div>
+            </div>
+        </header>
+
+        <div id="content-wrapper">
+            <main>
+                <div id="inner">
+			        <div><a th:href="@{/pet/list}">ペット一覧へ</a></div>
+				    <form method="post" th:action="@{/pet/add}" th:object="${pet}">
+						<div class="Form">
+							<div class="Form-Item">
+						    	<p class="Form-Item-Label">
+						      		<span class="Form-Item-Label-Required">必須</span>名前
+						    	</p>
+						    	<input type="text" th:field="*{name}" class="Form-Item-Input" placeholder="例）ムギ">
+						  	</div>
+						  	<div class="Form-Item">
+						    	<p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>種類</p>
+						    	<div class="wrap">
+							    	<div class="select">
+
+							    	    <!-- 仮実装 -->
+								    	<select class="Form-Item-Input" required id="type" name="type">
+								            <option value="">選択してください
+								            <option value="猫">猫
+								            <option value="犬">犬
+								            <option value="トカゲ">トカゲ
+								            <option value="ヘビ">ヘビ
+								            <option value="鳥">鳥
+								            <option value="ハムスター">ハムスター
+								        </select>
+								        <!-- ここまで -->
+
+							        </div>
+						    	</div>
+						  	</div>
+						  	<div class="Form-Item">
+						    	<p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>オーナー</p>
+						    	<div class="wrap">
+							    	<div class="select">
+
+							    	    <!-- 仮実装 -->
+								    	<select id="ownerId" name="ownerId" class="Form-Item-Input" required>
+								            <option value="">選択してください
+								            <option value="1">プロパ 太郎
+								            <option value="2">プロパ 花子
+								            <option value="3">プロパ 次郎
+								        </select>
+								        <!-- ここまで -->
+
+							        </div>
+						    	</div>
+						  	</div>
+						  	<input type="submit" class="Form-Btn" value="登録する">
+						</div>
+				    </form>
+                </div>
+            </main>
+
+        </div>
+        <footer>
+            ©︎2024 PROPAGANDIST CORPORATION. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

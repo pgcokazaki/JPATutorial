@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Tutorial of JPA</title>
+    <link rel="stylesheet" th:href="@{/css/owner/list.css}">
+</head>
+<body>
+    <div id="outer">
+        <header>
+            <div id="header-container">
+                <div id="head-inner">
+                    <h1>ペット情報管理システム</h1>
+                    <p class="description">オーナー一覧</p>
+                </div>
+            </div>
+        </header>
+        <div id="content-wrapper">
+            <main>
+                <div id="inner">
+                    <div><a th:href="@{/pet/list}">ペット一覧へ</a></div>
+                    <table>
+                        <tr>
+                            <th>オーナーID</th>
+                            <th>姓</th>
+                            <th>名</th>
+                            <th>電話番号</th>
+                        </tr>
+
+                        <!-- 仮実装 -->
+                        <tr>
+                            <td>1</td>
+                            <td>プロパ</td>
+                            <td>太郎</td>
+                            <td>0312345678</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>プロパ</td>
+                            <td>花子</td>
+                            <td>0312345678</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>プロパ</td>
+                            <td>次郎</td>
+                            <td>0312345678</td>
+                        </tr>
+                        <!-- ここまで -->
+
+                    </table>
+                </div>
+            </main>
+            <aside>
+                <div id="middle-inner">
+                    <div class="side-title">オーナー登録</div>
+                    <div class="side">
+                        <form method="post" th:action="@{/owner/add}" th:object="${owner}">
+                            <label>姓</label>
+                            <input type="text" th:field="*{lastName}">
+                            <label>名</label>
+                            <input type="text" th:field="*{firstName}">
+                            <label>TEL</label>
+                            <input type="text" th:field="*{telephone}">
+                            <input type="submit" value="登録">
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <footer>
+            ©︎2024 PROPAGANDIST CORPORATION. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

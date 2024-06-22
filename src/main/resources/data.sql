@@ -1,0 +1,24 @@
+INSERT INTO owners VALUES (1, '6085551023', 'ハルト', '佐藤', '110 W. Liberty St.', 'Madison');
+INSERT INTO owners VALUES (2, '6085551749', 'エマ', '鈴木', '638 Cardinal Ave.', 'Sun Prairie');
+INSERT INTO owners VALUES (3, '6085558763', 'ミナト', '高橋', '2693 Commerce St.', 'McFarland');
+INSERT INTO owners VALUES (4, '6085553198', 'ツムギ', '田中', '563 Friendly St.', 'Windsor');
+INSERT INTO owners VALUES (5, '6085552765', 'ユイト', '伊藤', '2387 S. Fair Way', 'Madison');
+INSERT INTO owners VALUES (6, '6085552654', 'ミオ', '渡辺', '105 N. Lake St.', 'Monona');
+INSERT INTO owners VALUES (7, '6085555387', 'アオト', '山本', '1450 Oak Blvd.', 'Monona');
+INSERT INTO owners VALUES (8, '6085557683', 'サナ', '中村', '345 Maple St.', 'Madison');
+INSERT INTO owners VALUES (9, '6085559435', 'リク', '小林', '2749 Blackhawk Trail', 'Madison');
+INSERT INTO owners VALUES (10, '6085555487', 'メイ', '加藤', '2335 Independence La.', 'Waunakee');
+
+INSERT INTO pets VALUES (1, 1, 'レオ', '猫');
+INSERT INTO pets VALUES (2, 2, 'バジル', 'ハムスター');
+INSERT INTO pets VALUES (3, 3, 'ロージー', '犬');
+INSERT INTO pets VALUES (4, 3, 'ジュエル', '犬');
+INSERT INTO pets VALUES (5, 4, 'イギー', 'トカゲ');
+INSERT INTO pets VALUES (6, 5, 'ジョージ', 'ヘビ');
+INSERT INTO pets VALUES (7, 6, 'サマンサ', '猫');
+INSERT INTO pets VALUES (8, 6, 'マックス', '猫');
+INSERT INTO pets VALUES (9, 7, 'ラッキー', '鳥');
+INSERT INTO pets VALUES (10, 8, 'マリガン', '犬');
+INSERT INTO pets VALUES (11, 9, 'フレディー', '鳥');
+INSERT INTO pets VALUES (12, 10, 'ラッキー', '犬');
+INSERT INTO pets VALUES (13, 10, 'スライ', '猫');

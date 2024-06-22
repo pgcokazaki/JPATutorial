@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Tutorial of JPA</title>
+    <link rel="stylesheet" th:href="@{/css/pet/list.css}">
+</head>
+<body>
+    <div id="outer">
+        <header>
+            <div id="header-container">
+                <div id="head-inner">
+                    <h1>ペット情報管理システム</h1>
+                    <p class="description">ペット一覧</p>
+                </div>
+            </div>
+        </header>
+        <div id="content-wrapper">
+            <main>
+                <div id="inner">
+                    <div><a th:href="@{/owner/list}">オーナー一覧へ</a></div><div><a th:href="@{/pet/add}">ペット情報登録へ</a></div>
+                    <table>
+                        <tr>
+                            <th>ペットID</th>
+                            <th>名前</th>
+                            <th>種類</th>
+                            <th>オーナー</th>
+                        </tr>
+
+                        <!-- 仮実装 -->
+                        <tr>
+                            <td>1</td>
+                            <td>タマ</td>
+                            <td>猫</td>
+                            <td><p >プロパ 太郎</p></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>タロウ</td>
+                            <td>ハムスター</td>
+                            <td><p >プロパ 次郎</p></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>ポチ</td>
+                            <td>犬</td>
+                            <td><p >プロパ 花子</p></td>
+                        </tr>
+                        <!-- ここまで -->
+
+                    </table>
+                </div>
+            </main>
+        </div>
+        <footer>
+            ©︎2024 PROPAGANDIST CORPORATION. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
